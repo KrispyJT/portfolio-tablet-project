@@ -240,10 +240,9 @@ li.current a{
 .top-box-c img {
     border: 10px solid var(--third);
     border-radius: 15px;
-    width: 45vw;
-    height: 45vh;
     background-color: var(--backdrop);
     box-shadow: var(--shadow);
+    
 }
 
 /* BOXES */
@@ -298,11 +297,6 @@ li.current a{
     font-weight: bolder;
 }
 
-.form {
-    text-align: left;
-    line-height: 2em;
-    
-}
 
 /* AMENITIES ONLYY BELOW */
 
@@ -321,7 +315,7 @@ li.current a{
 
 /* ROOMS CSS TABLE */
 
-table {
+.table {
     padding: 1.2rem;
     height: 45vh;
     /* left: 10%; */
@@ -331,7 +325,7 @@ table {
     width: fit-content;
 } 
 
-thead th {
+.table thead th {
     background: var(--primary);
     color: #fff;
     font-size: 1rem;
@@ -341,13 +335,13 @@ thead th {
     text-align: left;
 } 
 
-tr {
+.table tr {
     background: #f4f7f8;
     border-bottom: 1px solid #fff;
     margin-bottom: 5px;
 }
 
-th, td {
+.table th, .table td {
     font-size: 18px;
     font-weight: 300;
     padding: 20px;
@@ -355,11 +349,13 @@ th, td {
     width: 33.3333%;
 } 
 
- .form {
+.form {
     display: grid;
     grid-template-columns: 1fr;
     margin: auto;
-    text-align: center;
+    line-height: 2rem;
+    text-align: left;
+
 }   
 ul.rules {
     text-align: center;
@@ -367,22 +363,27 @@ ul.rules {
 
 
 /* GALLERY - LOCATION */
+
 .portfolio {
     background: var(--primary);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items:flex-start;
+    display: grid;
+    grid-template-columns: 
+    'auto'
+    'auto'
+    'auto'
+    'auto'
+    'auto'
+    'auto'
+    'auto'
+    'auto'
+    'auto';
+    grid-gap: 10px;
     padding: 1.5rem;
  }
 
  .portfolio img {
     border: 10px solid var(--secondary);
     border-radius: 35px;
-    width: 45vw;
-    height: 45vh;
-    width: fit-content;
     box-shadow: var(--shadow);
     border-spacing: 10px;
 }  
@@ -451,7 +452,19 @@ footer {
         text-align: center;
         margin:auto
     }
+
+    .form {
+        grid-template-columns: min-content;
+
+    }
+
+    .showcase {
+        justify-content: flex-start;
+    }
 }
+
+
+
 
 
 /* media query */
