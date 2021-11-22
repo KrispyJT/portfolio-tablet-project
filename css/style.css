@@ -139,7 +139,6 @@ li.current a{
     text-transform: uppercase;
     text-decoration: underline double;
     /* border-radius: 30px; */
-
 }
 .current a::before  {
     content: '\1f3c8';
@@ -174,7 +173,6 @@ li.current a{
     align-items:baseline;
     justify-content: center;
     box-shadow: var(--shadow);
-
 }
 
 .showcase h1 {
@@ -184,8 +182,6 @@ li.current a{
     color: var(--dark);
     padding:0;
     font-weight: bolder;
-    
-
 }
 
 .showcase p, .showcase h2 {
@@ -202,7 +198,6 @@ li.current a{
     line-height: 1rem;
     padding: 8px;
     margin-bottom: 5px;
-
 }
 
 
@@ -316,21 +311,23 @@ li.current a{
 /* ROOMS CSS TABLE */
 
 .table {
+    display: block;
+    margin: 0 auto;
     padding: 1.2rem;
-    height: min-content;
+    /* height: min-content;
     width: min-content;
     /* left: 10%; */
-    margin: 20px auto;
+    /* margin: 20px auto;
     overflow-y: scroll;
     position: static;
-    width: fit-content;
+    width: fit-content; */ 
 } 
 
 .table thead th {
     background: var(--primary);
     color: #fff;
-    font-size: 1rem;
-    font-weight: 100;
+    font-size: 1.2rem;
+    font-weight: bolder;
     letter-spacing: 2px;
     text-transform: uppercase;
     text-align: left;
@@ -343,9 +340,9 @@ li.current a{
 }
 
 .table th, .table td {
-    font-size: 18px;
-    font-weight: 300;
-    padding: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem;
     text-align: left;
     width: 33.3333%;
 } 
@@ -354,7 +351,9 @@ li.current a{
     display: grid;
     grid-template-columns: 1fr;
     margin: auto;
+    /* line-height: 1.5rem; */
     line-height: 2.5rem;
+    /* grid-gap: 30px; */
     text-align: left;
     padding: auto;
 
@@ -456,9 +455,37 @@ footer {
     }
 
     .form {
-        grid-template-columns: min-content;
+        /* grid-template-columns: min-content; */
+        grid-template-columns: repeat(4, 1fr);
+        grid-column: 1/2;
 
     }
+
+    .boxes {
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-row-start: 1;
+        grid-row-end: 4;
+
+    }
+
+    /* .rules {
+
+    } */
+
+
+    .top-box-c {
+        flex-direction: row;
+    }
+
+    /* label {
+        text-align: left;
+        grid-column: 1/span2;
+    }
+
+    input,
+    button {
+        grid-column: 2/3;
+    } */
 
     .showcase {
         justify-content: flex-start;
