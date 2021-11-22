@@ -242,7 +242,7 @@ li.current a{
     border-radius: 15px;
     background-color: var(--backdrop);
     box-shadow: var(--shadow);
-    
+
 }
 
 /* BOXES */
@@ -317,7 +317,8 @@ li.current a{
 
 .table {
     padding: 1.2rem;
-    height: 45vh;
+    height: min-content;
+    width: min-content;
     /* left: 10%; */
     margin: 20px auto;
     overflow-y: scroll;
@@ -353,8 +354,9 @@ li.current a{
     display: grid;
     grid-template-columns: 1fr;
     margin: auto;
-    line-height: 2rem;
+    line-height: 2.5rem;
     text-align: left;
+    padding: auto;
 
 }   
 ul.rules {
