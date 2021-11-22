@@ -314,13 +314,13 @@ li.current a{
     display: block;
     margin: 0 auto;
     padding: 1.2rem;
-    /* height: min-content;
+    height: min-content;
     width: min-content;
-    /* left: 10%; */
-    /* margin: 20px auto;
+    left: 10%; 
+    margin: 20px auto;
     overflow-y: scroll;
-    position: static;
-    width: fit-content; */ 
+    position: relative;
+    width: fit-content;
 } 
 
 .table thead th {
