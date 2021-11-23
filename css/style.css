@@ -708,6 +708,7 @@ input[type=submit]:hover {
 /* GALLERY - LOCATION */
 
 .portfolio {
+    display: grid;
     background: var(--primary);
     display: grid;
     grid-template-columns: 
@@ -763,7 +764,7 @@ footer ul {
     flex-wrap: wrap;
 } */
 
-/* 
+
 @media screen and (min-width: 700px) {
     .top-container {
         grid-template-areas: 
@@ -807,7 +808,25 @@ footer ul {
         grid-row-start: 1;
         grid-row-end: 4;
 
-    } */
+    } 
+
+
+    .portfolio {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items:flex-start;
+     }
+    
+     .portfolio img {
+        border: 10px solid #333;
+        margin: 10px;
+        height: 50vh;
+        width: 50vh;
+        box-shadow: #1378af 2px;
+    } 
+}
 
     /* .rules {
     } */
