@@ -105,12 +105,13 @@ p {
 }
 
 table {
-    height: 40%;
+    min-width: min-content;
+    /* height: 40%; */
     left: 10%;
-    margin: 20px auto;
+    margin: 0 auto;
     overflow-y: scroll;
     position: static;
-    width: 50%;
+    /* width: 50%; */
 }
 
 thead th {
