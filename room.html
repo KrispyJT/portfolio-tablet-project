@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/picture_of_arnold_115x70.png">
+    <link rel="stylesheet" href="./css/html5reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Room</title>
+    <script src="https://kit.fontawesome.com/cb7ea12c0f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- MAIN NAV BAR = wrapper -->
+    <header class="wrapper">
+        <!-- accessibility-nav -->
+        <div>
+            <a class="skip" href="#skip">Skip to Main Content</a>
+        </div>
+        <!-- main-nav = links -->
+        <nav aria-label="nav" >
+            <div class='logo'>
+                <img src="./images/logo-image.PNG" alt="Sunset Arms Logo" id='logo'>
+            </div>
+            <ul class="nav_links">
+              <li><a href="index.html">Sunset Arms</a></li>
+              <li ><a href="location.html">Location</a></li>
+              <li ><a href="amenities.html">Amenities</a></li>
+              <li class="current"><a href="rooms.html">Rooms</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- container = main -->
+    <main class="container" id="skip" tabindex="0" >
+        <div class="showcase">
+            <h1>Boarding Information</h1>
+            <p> Wanna become a tenant? Check availability! <br>
+            If there are rooms available, please fill out the form below.</p>
+            <table class='table'>
+                <thead>
+                    <tr>
+                        <th scope="col">Room</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Availabile</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td># 1</td>
+                        <td>Phil & Gertie</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td># 2</td>
+                        <td>N/A</td>
+                        <td>Yes(2 bedroom)</td>
+                    </tr>
+                    <tr>
+                        <td># 3</td>
+                        <td>Mr. Hyunh</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td># 4</td>
+                        <td>N/A</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td># 5</td>
+                        <td>Oskar & Suzie Kokoshka</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td># 6</td>
+                        <td>N/A</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td># 7</td>
+                        <td>Ernie Potts</td>
+                        <td>No</td>
+                    </tr>
+                    <tfoot>
+                        <td>Total rooms available</td>
+                        <td>3</td>
+                    </tfoot>
+                </tbody>
+            </table>
+        </div>
+        <div class="form">
+            <form action="https://formspree.io/f/mvodjjll" method="post">
+                <legend>Interest Form</legend>
+                <fieldset>
+                    <label for="firstname">First Name:</label>
+                    <input type="text" id="firstname" name="First Name" required>
+
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" id="lastname" name="Last Name" required>
+
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="Email" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    <div><span>FORMAT: 123-456-7896</span></div>
+
+                    <label for="message">Leave A Message!</label>
+                    <i class="fas fa-comments"></i>
+                    <textarea name="Message" id="message"></textarea>
+
+                    <input type="submit" id="submit" value="SUBMIT">
+                </fieldset>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <img src="./images/footer-image.png" alt="Hey Arnold Logo" id="foot">
+        <nav>
+            <ul class="footer">
+                <li><p>&#127968; Address: 4040 Vine Street Hillwood, WA</p></li>
+                <li><p>&#9993; Email: SunsetArms@heyarnold.test</p></li>
+                <li><p>&#9742; Phone: (253) 439-2762</p></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
